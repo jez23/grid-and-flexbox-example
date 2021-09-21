@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightgray;
+}
+
+/*############## NAV CSS #####################*/
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+}
+.nav-logo{
+ width: 25%;
+}
+.nav-buttons a.active{
+    color: blue
+}
+.nav-buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    align-items: center;
+}
+.nav-buttons a{
+   color: black;
+    text-decoration: none;
+}
+.nav-buttons a:hover{
+    color: red;
+}
+.nav-search-container{
+    width: 25%;
+    justify-content: flex-end;
+    display: flex;
+    text-align: center;
+}
+.nav-search-container div{
+    background-color: black;
+    width: 150px;
+    height: 100%;
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.fa-search{
+    cursor: pointer;
+}
+
+/*############## HERO BANNER CSS #####################*/
+
+.hero-banner{
+    background-color: blue;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.hero-banner h1{
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.btn-green{
+    background-color: green;
+    color: white;
+}
+.btn-blue{
+    background-color: lightblue;
+    color: white;
+}
+
+.btn-green:hover,
+.btn-blue:hover{
+    background-color: black;
+}
+
+/*############## MOST POPULAR POSTS CSS #####################*/
+.most-popular-posts{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.most-popular-posts h2{
+    color: lightblue;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.most-popular-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.most-popular-posts-container a{
+    width: 30%;
+    text-decoration: none;
+    color: black;
+}
+.most-popular-posts-container .cardTopBottom{
+    background-color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.cardTopBottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cardTopBottom-title{
+    padding: 10px;
+}
+
+/* #################### Most Popular Clients #################### */
+
+.most-popular-clients{
+    display: grid;
+    justify-content: center;
+    background-color: brown;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.most-popular-clients-title{
+    display: grid;
+    align-self: center;
+}
+.most-popular-clients-title h2{
+    color: white;
+    text-transform: uppercase;
+}
+.most-popular-clients-logos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-self: baseline;
+}
+
+
+/* #################### Top Rated CSS #################### */
+.top-rated{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.top-rated h2{
+    color: lightblue;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.top-rated-images{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: auto;
+    background-color: white;
+}
+.top-rated-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* #################### Hot News CSS #################### */
+.hot-news{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+        ". title title title title ."
+        ". content content content content .";
+    margin-bottom: 40px;
+}
+.hot-news h2{
+    color: lightblue;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.hot-news-title{
+    grid-area: title;
+    text-align: center;
+}
+.hot-news-container{
+    display: grid;
+    grid-area: content;
+}
+.hot-news-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.row7030{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.row5050{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.row3070{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card6040{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: gray;
+    text-align: right;
+}
+
+.hot-news .cardTopBottom{
+    background-color: gray;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* #################### Footer CSS #################### */
+
+footer{
+    min-height: 50px;
+    background-color: black;
+    height: auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    color: white;
+    align-content: center;
+}
